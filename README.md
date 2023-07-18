@@ -68,7 +68,7 @@ This project used the following technologies:
 4. Confirm the transaction in MetaMask.
 5. The transaction details will get approved on the network , and that amount will be sent to the recipient address .
 
-**Conclusion**
+##Conclusion
 
 Thank you for exploring the ETH Goerli ATM application! With this simple Web3 application, you can connect your MetaMask wallet, deposit, withdraw, and transfer ethers to other accounts on the Ethereum Goerli network. The smart contract named "MyProject" provides the necessary functionalities for managing account balances.
 
