@@ -1,30 +1,36 @@
-# ETH Goerli ATM
+# Creating an ERC20 Token
 
 >  A Simple Web3 application for connecting to your Metamask wallet and deposit , withdraw and transfer ethers to other accounts . 
 
 ## Description 
 
-This contract, named "MyProject," is deployed on the Ethereum Goerli network using Truffle.js. It provides basic functionalities for managing an account balance and allows the contract owner to deposit, withdraw, and transfer funds.
+Ashyam (ASH) is a simple ERC-20 token deployed on the Ethereum Goerli test network. This smart contract implements the ERC-20 standard interface and allows for minting and burning tokens. The token can be used for testing and experimentation on the Goerli network.
 
 ---
 ## Contract Details
 
 1) Network: Ethereum Goerli
-2) Contract Address: [0x994DfE707a8B89d4ca2aB4F01a518DE08F35EFAE]
+2) Contract Address: [0xc034929155e43A6c10d037417791fE3126DA0e73]
 3) Solidity Version: 0.8.9
-4) License: UNLICENSED (SPDX-License-Identifier)
+4) License: MIT
 
-## Technologies Used 
+## Token Details
 
-This project used the following technologies:
+1) Token Name: Ashyam
+2) Token Symbol: ASH
+3) Decimals: 18
 
-- **Solidity**: Solidity is a programming language specifically designed for writing smart contracts on the Ethereum platform. It is used to write the "Myproject" smart contract in this project. 
+## Functionality
 
-- **Web3.js**: Web3.js is a JavaScript library that allows developers to interact with Ethereum and other blockchain networks by providing an easy-to-use interface to interact with smart contracts, manage accounts, and send transactions. It is an essential tool for building decentralized applications (DApps) and integrating blockchain functionality into web applications.
+- **Minting Tokens:** The owner of the contract can mint new ASHYAM tokens by calling the mint function. This function creates new tokens and adds them to the balance of the specified address.
 
-- **MetaMask**: MetaMask is a popular browser extension wallet that allows users to manage Ethereum accounts and interact with decentralized applications. It is used to connect to the Ethereum Goerli network and perform transactions in this project. 
+- **Burning Tokens:** Token holders can burn their ASHYAM tokens by calling the burn function. This function removes tokens from the caller's balance and reduces the total supply.
 
-- **Truffle**: Truffle is a development framework for Ethereum smart contracts that simplifies the process of building, testing, and deploying decentralized applications (DApps). It provides a suite of tools and utilities that streamline the development workflow, enabling developers to focus on writing smart contracts and frontend code without worrying about complex configurations.
+- **Transferring Tokens:** Users can transfer ASHYAM tokens to other addresses using the transfer function. This function transfers a specified amount of tokens from the caller's balance to the recipient's balance.
+
+- **Approving Allowances:** Token holders can approve other addresses to spend a certain number of ASHYAM tokens on their behalf using the approve function. This function sets the allowance for the spender.
+
+- **Transferring from Allowance:** Spenders with an approved allowance can transfer tokens from the owner's balance to another address using the transferFrom function.
 
 ## Installation ⬇️
 
@@ -33,9 +39,9 @@ This project used the following technologies:
 1. Download or clone the repository by git command.
 2. Install the dependencies by running `npm install`.
 3. Install truffle by running 'npm install -g truffle' .
-4. Then run this command 'truffle migrate --network goerli' to deploy our contract on goerli eth.
-5.Then with the help of cd go to my-app directory.
-6. Start the development server by running `npm run dev`.
+4. Download the Hd wallet provider package by npm install @truffle/hdwallet-provider command
+5. Then run this command 'truffle migrate --network goerli' to deploy our contract on goerli eth.
+6. Your contract will be successfully deployed on Eth goerli network
 
 ### Configure MetaMask to use ETH Goerli network  🦊
 
@@ -43,37 +49,4 @@ This project used the following technologies:
 2. Select the 'Include Testnets' checkbox.
 3. Search for "Goerli" in the 'Search Networks' tab.
 4. Find the Goerli network you want to connect to and click 'Add to MetaMask'. It will be automatically added to your wallet.
-
-## Usage 🪜
-
-**To Deposit**
-
-1. After connecting MetaMask to the Eth Goerli Network , connect your wallet with the application
-2. Enter the amount you want to deposit in the box and then click on deposit to deposit that amount onto the contract  . 
-4. Confirm the transaction in MetaMask.
-5. The transaction details will get approved on the network , and the account balance will be updated.
-
-**To Withdraw**
-
-1. After connecting MetaMask to the Eth Goerli Network , connect your wallet with the application
-2. Enter the amount you want to withdraw in the box and then click on withdraw to withdraw that amount from the contract  . 
-4. Confirm the transaction in MetaMask.
-5. The transaction details will get approved on the network , and the account balance will be updated.
-
-**To Transfer**
-
-1. After connecting MetaMask to the Eth Goerli Network , connect your wallet with the application
-2. Enter the amount you want to transfer in the box .
-3. Now paste the recipient adddress in the next box and click on transfer . 
-4. Confirm the transaction in MetaMask.
-5. The transaction details will get approved on the network , and that amount will be sent to the recipient address .
-
-## Conclusion
-
-Thank you for exploring the ETH Goerli ATM application! With this simple Web3 application, you can connect your MetaMask wallet, deposit, withdraw, and transfer ethers to other accounts on the Ethereum Goerli network. The smart contract named "MyProject" provides the necessary functionalities for managing account balances.
-
-Please note that this application is designed for use on the Ethereum Goerli test network. Before using it, ensure that your MetaMask wallet is connected to the Goerli network to perform transactions. Additionally, remember to only use testnet Ether for transactions on Goerli, as it is not real Ether.
-
-If you encounter any issues or have any questions while using the application, feel free to reach out for assistance. Enjoy exploring the world of decentralized finance with the ETH Goerli ATM! 🚀
-
 
