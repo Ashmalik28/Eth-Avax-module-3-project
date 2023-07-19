@@ -1,6 +1,6 @@
 # Creating an ERC20 Token
 
->  A Simple Web3 application for connecting to your Metamask wallet and deposit , withdraw and transfer ethers to other accounts . 
+>  A Simple token contract that lets the owner mint some tokens and let the token holders burn and transfer their tokens . 
 
 ## Description 
 
