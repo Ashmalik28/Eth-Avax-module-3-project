@@ -1,6 +1,6 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const infuraProjectId = '4aeaaef098944254b59c2338dae8cb84';
-const mnemonic = 'initial jelly survey reduce clinic laugh twelve sad final puzzle used dumb';
+const mnemonic = 'your mnemonic';
 
 module.exports = {
   networks: {
